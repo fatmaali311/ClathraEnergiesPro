@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --primary-green: #5cb469;
+  --primary-blue: #2BC0E4;
+  --secondary-blue: #4285F4;
+  --green-500: #4CAF50;
+  --blue-500: #4285F4;
+  --animation-duration: 0.8s;
+  --animation-ease: ease-out;
+  --text-gray-500: #6B7280;
+  --text-gray-600: #4B5563;
+  --bg-gray-50: #F9FAFB;
+}
+
+html, body, #root {
+  position: relative;
+}
+body {
+  @apply bg-white m-0 p-0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.g-button {
+  background: linear-gradient(to bottom, var(--primary-green), var(--primary-blue));
+  color: #ffffff;
+  border: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.g-button:hover {
+  background: #ffffff !important;
+  color: var(--primary-green) !important;
+  border: 2px solid var(--primary-green) !important;
+}
+
+.g-button-outline {
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
+  background-color: #ffffff;
+  transition: all 0.4s ease-in-out;
+}
+
+.g-button-outline:hover {
+  background: var(--primary-green);
+  color: #ffffff;
+}
+
+.section-container {
+  @apply py-16 px-4 sm:px-6 lg:px-4 max-w-7xl mx-auto;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl lg:text-5xl font-semibold text-[var(--text-gray-500)] ;
+}
+
+.card-shadow {
+  @apply shadow-[-8px_8px_20px_rgba(0,0,0,0.25)];
+}
+
+.hover-shadow {
+  @apply hover:shadow-[-12px_12px_24px_rgba(107,114,128,0.45)] ;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(-80px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Cross-browser animation prefixes */
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@-webkit-keyframes slideLeft {
+  from { transform: translateX(-80px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+footer {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+footer h4 {
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
