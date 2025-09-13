@@ -5,18 +5,18 @@ export const contactInfo = [
   
    {
     icon: <MdEmail className="text-xl sm:text-2xl" />,
-    text: "info@clathraenergies.com", 
+    text: "clathraenergies@gmail.com", 
   },
   {
     icon: <FaPhone className="text-xl sm:text-2xl" />,
-    text: "+33(0)76669019", 
+    text: "+33(0)766699019", 
   },
  
   {
     icon: <FaLocationDot className="text-xl sm:text-2xl mt-1" />,
     text: (
       <>
-        1 Rue Dana Faein,<br />
+        1 Rue Rene Cassin,<br />
         14280 Saint-Contest,<br />
         France
       </>

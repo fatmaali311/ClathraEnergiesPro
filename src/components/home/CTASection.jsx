@@ -18,7 +18,9 @@ export default function CTASection() {
       <div className="absolute inset-0 bg-gradient-to-l from-[var(--primary-green)]/70 via-[var(--primary-green)]/50 to-[var(--primary-blue)]/60"></div>
       <div className="relative z-10 flex items-center justify-center h-full w-full px-4 sm:px-6 lg:px-8 pl-10">
         <motion.div
-          className="bg-white p-3 sm:p-4 md:p-6 lg:p-8 rounded-xl shadow-2xl w-full max-w-4xl flex items-center justify-center"
+          className="bg-white p-3 sm:p-4 md:p-6 lg:p-8 rounded-xl shadow-2xl 
+             w-full max-w-md sm:max-w-2xl lg:max-w-4xl mx-auto flex 
+             items-center justify-center"
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
