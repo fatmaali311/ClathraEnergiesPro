@@ -20,13 +20,14 @@ export default function CompanyPurpose() {
         variants={slideUp}
         transition={{ delay: 0.2 }}
         viewport={viewportSettings}
-        className="text-[var(--text-gray-600)] text-base md:text-lg leading-relaxed text-center md:text-left max-w-5xl mx-auto md:mx-0"
+        className="text-[var(--text-gray-600)] text-base md:text-lg leading-relaxed text-center mx-auto max-w-5xl"
       >
-        To contribute to the global energy transition by accelerating the
-        deployment of renewable gas technologies, innovative energy storage, and
-        intelligent process solutions — while circular economy and scientific
-        innovation.
+      To contribute to the global energy transition by accelerating the deployment of
+      renewable gas technologies, innovative energy storage,
+      and intelligent process solutions — while circular economy and scientific innovation.
       </motion.p>
+
+
     </section>
   );
 }

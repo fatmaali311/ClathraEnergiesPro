@@ -22,7 +22,7 @@ export default function WhoWeAre() {
               id="who-we-are-title"
               className="section-title mb-8"
             >
-              Who We Are?
+              Who Are We?
             </h2>
           </header>
           <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed font-medium text-[var(--text-gray-600)] mb-8">

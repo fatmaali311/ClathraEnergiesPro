@@ -17,14 +17,14 @@ export default function AboutHero() {
         className="relative z-10 text-center px-4 max-w-3xl"
       >
         <h1 className="text-white text-3xl md:text-5xl font-bold mb-4">
-          Our Story
+          Our Motivation
         </h1>
-        <p className="text-white/90 text-sm md:text-lg leading-relaxed">
-          ClathraEnergies was founded to bridge the gap between cutting-edge
-          research and practical application. Our purpose is to deliver modular,
-          scalable, and cost-effective technologies that accelerate the
-          transition to clean energy.
+        <p className="text-white/90 text-sm md:text-lg leading-relaxed mx-auto ">
+          ClathraEnergies was founded to bridge the gap between cutting-edge research
+          and practical application. Our purpose is to deliver modular, scalable, and cost-effective technologies
+          that accelerate the transition to clean energy.
         </p>
+
       </motion.div>
     </section>
   );

@@ -24,7 +24,7 @@ export default function HeroSection() {
           whileInView="show"
           viewport={viewportSettings}
         >
-          Modular process solutions for <br /> renewable gases.
+          Modular process solutions for <br /> renewable gases
         </motion.h1>
         <motion.p
           className="mt-8 sm:mt-10 text-lg sm:text-xl font-normal leading-relaxed max-w-3xl text-white/95 text-center lg:text-left mx-auto lg:mx-0"
