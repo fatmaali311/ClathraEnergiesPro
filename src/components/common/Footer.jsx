@@ -81,7 +81,7 @@ export default function Footer() {
               </h4>
 
               {contactInfo.map((item, i) => {
-             
+
                 if (typeof item.text === "string") {
                   if (item.text.includes("@")) {
                     return (
@@ -191,14 +191,15 @@ export default function Footer() {
 
       {/* Bottom Year */}
       <motion.div
-        className="text-center mt-4 mb-6 text-base sm:text-lg font-normal"
+        className="text-center mt-4 mb-6 text-sm sm:text-base md:text-lg lg:text-xl font-normal text-gray-600 hover:text-gray-800 transition-colors duration-300"
         initial="hidden"
         whileInView="visible"
-        viewport={viewportSettings}
+        viewport={{ once: true, amount: 0.2 }}
         variants={fadeUp(1.2)}
       >
-        {new Date().getFullYear()}
+        Copyright ©{new Date().getFullYear()} ClathraEnergies
       </motion.div>
+
     </>
   );
 }
