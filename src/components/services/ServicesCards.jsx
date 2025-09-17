@@ -88,7 +88,7 @@ export default function ServicesCards() {
               viewport={{ once: true, amount: 0.2 }}
               className="px-4 sm:px-12 mb-10"
             >
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-gray-400">
+              <h3 className="text-2xl sm:text-3xl md:text-5xl font-medium mb-6 text-gray-400">
                 {obj.title}
               </h3>
               {obj.subtitle && (

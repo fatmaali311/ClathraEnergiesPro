@@ -191,7 +191,7 @@ export default function Footer() {
 
       {/* Bottom Year */}
       <motion.div
-        className="text-center mt-4 mb-6 text-sm sm:text-base md:text-lg lg:text-xl font-normal text-gray-600 hover:text-gray-800 transition-colors duration-300"
+        className="text-center mt-4 mb-6 text-sm sm:text-base md:text-md lg:text-lg font-normal text-gray-600 hover:text-gray-800 transition-colors duration-300"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
