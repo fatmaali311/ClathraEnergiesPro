@@ -80,3 +80,30 @@ export const menuVariants = {
 };
 
 export const viewportSettings = { once: true, amount: 0.2 };
+// Slide Up Card
+export const cardSlideUp = {
+  hidden: { opacity: 0, y: 80, scale: 0.95 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
+
+// List animations
+export const listContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15 },
+  },
+};
+
+export const listItem = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
+
