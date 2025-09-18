@@ -23,7 +23,7 @@ export default function Footer() {
           viewport={viewportSettings}
           variants={fadeUp(0)}
         >
-          CLATHRAENERGIES
+          ClathraEnergies
         </motion.h1>
 
         {/* Main content */}

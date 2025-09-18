@@ -7,7 +7,7 @@ export default function Services() {
   return (
     <section className="section-container">
       <h2 className="section-title text-center md:mb-24 mb-16 ">
-        CLATHRAENERGIES SERVICES
+       ClathraEnergies Services
       </h2>
       <motion.div
         variants={containerVariants}

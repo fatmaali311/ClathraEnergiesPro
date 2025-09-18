@@ -11,24 +11,19 @@ import {
 export default function ServicesCards() {
   return (
     <section className="section-container bg-white">
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
-        className="flex flex-col gap-24 mb-12"
-      >
+      <div className="flex flex-col gap-24 mb-12">
         {servicesData.map((obj, i) => (
           <motion.div
             key={i}
             variants={cardSlideUp}
             initial="hidden"
-            whileInView="show"
+            animate={i === 0 ? "show" : undefined}
+            whileInView={i !== 0 ? "show" : undefined}
             viewport={{ once: true, amount: 0.2 }}
             whileHover={{ y: -12, scale: 1.01 }}
             className={`relative bg-gray-50 cursor-pointer
               flex flex-col items-center text-center
-              w-full max-w-6xl mx-auto p-10 sm:p-12 md:p-16 pt-20
+              w-full max-w-6xl mx-auto p-6 sm:p-10 md:p-16 pt-20
               shadow-[8px_8px_20px_rgba(0,0,0,0.15)]
               transition-all duration-300 ${obj.borderColor}`}
           >
@@ -36,12 +31,13 @@ export default function ServicesCards() {
             <motion.div
               variants={fadeUp(i, 0.2)}
               initial="hidden"
-              whileInView="visible"
+              animate={i === 0 ? "visible" : undefined}
+              whileInView={i !== 0 ? "visible" : undefined}
               viewport={{ once: true, amount: 0.2 }}
               className={`absolute -top-6 -left-2 sm:-left-4 md:-top-8 md:-left-4
-                w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20
+                w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20
                 flex items-center justify-center
-                text-white text-xl sm:text-2xl md:text-3xl font-bold
+                text-white text-lg sm:text-xl md:text-3xl font-bold
                 ${obj.numberBgColor} shadow-[6px_6px_15px_rgba(0,0,0,0.25)]`}
             >
               {obj.number}
@@ -51,25 +47,25 @@ export default function ServicesCards() {
             <motion.div
               variants={fadeUp(i, 0.3)}
               initial="hidden"
-              whileInView="visible"
+              animate={i === 0 ? "visible" : undefined}
+              whileInView={i !== 0 ? "visible" : undefined}
               viewport={{ once: true, amount: 0.2 }}
               className="px-4 sm:px-12 mb-10 mx-auto text-center"
             >
-              <h3 className="text-2xl sm:text-3xl md:text-5xl font-medium mb-6 text-gray-400">
+              <h3 className="text-xl sm:text-3xl md:text-5xl font-medium mb-6 text-gray-400">
                 {obj.title}
               </h3>
 
               {obj.subtitle && (
-                <p className="text-gray-700 text-base sm:text-lg md:text-xl mb-4">
+                <p className="text-gray-700 text-sm sm:text-lg md:text-xl mb-4">
                   {obj.subtitle}
                 </p>
               )}
 
-              <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed">
+              <p className="text-gray-700 text-sm sm:text-lg md:text-xl leading-relaxed">
                 {obj.text}
               </p>
             </motion.div>
-
             {/* Boxes */}
             <motion.div
               variants={containerVariants}
@@ -112,24 +108,30 @@ export default function ServicesCards() {
 
                     {/* Points */}
                     <motion.ol
-                      variants={listContainer}
-                      initial="hidden"
-                      whileInView="show"
-                      viewport={{ once: true, amount: 0.2 }}
-                      className={`list-decimal mx-auto max-w-[270px] space-y-1
-                        text-md sm:text-xl
-                        ${isLastOdd ? "text-md sm:text-lg" : ""}`}
-                    >
-                      {box.points.map((p, k) => (
-                        <motion.li
-                          key={k}
-                          variants={listItem}
-                          className="text-left leading-relaxed"
-                        >
-                          {p}
-                        </motion.li>
-                      ))}
-                    </motion.ol>
+  variants={listContainer}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+  className={`list-decimal w-full space-y-1 text-left max-w-xs
+              pl-5 sm:pl-7 md:pl-10 lg:pl-14
+              text-md sm:text-xl
+              ${isLastOdd ? "text-md sm:text-lg" : ""}`}
+>
+  {box.points.map((p, k) => (
+    <motion.li
+      key={k}
+      variants={listItem}
+      className="leading-relaxed"
+    >
+      {p}
+    </motion.li>
+  ))}
+</motion.ol>
+
+
+
+
+
                   </motion.div>
                 );
               })}
@@ -139,22 +141,23 @@ export default function ServicesCards() {
             <motion.button
               variants={fadeUp(i, 0.4)}
               initial="hidden"
-              whileInView="visible"
+              animate={i === 0 ? "visible" : undefined}
+              whileInView={i !== 0 ? "visible" : undefined}
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               aria-label={`Learn more about ${obj.title}`}
-              className={`w-[230px] h-[75px] mt-10 p-2
-                text-white text-lg font-medium text-center
+              className={`w-full sm:w-[230px] h-[55px] sm:h-[75px] mt-10 p-2
+                text-white text-base sm:text-lg font-medium text-center
                 rounded-lg shadow-lg shadow-gray-400/40
-                transition-all duration-300
+                transition-all duration-300 
                 ${obj.buttonBgColor} ${obj.buttonHoverBgColor}`}
             >
               {obj.buttonText}
             </motion.button>
           </motion.div>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }

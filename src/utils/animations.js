@@ -81,15 +81,15 @@ export const menuVariants = {
 
 export const viewportSettings = { once: true, amount: 0.2 };
 // Slide Up Card
-export const cardSlideUp = {
-  hidden: { opacity: 0, y: 80, scale: 0.95 },
-  show: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
-};
+// export const cardSlideUp = {
+//   hidden: { opacity: 0, y: 80, scale: 0.95 },
+//   show: {
+//     opacity: 1,
+//     y: 0,
+//     scale: 1,
+//     transition: { duration: 0.8, ease: "easeOut" },
+//   },
+// };
 
 
 // List animations
@@ -107,3 +107,16 @@ export const listItem = {
 };
 
 
+export const cardSlideUp = {
+  hidden: { opacity: 0, y: 60, scale: 0.9 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+      bounce: 0.3,   
+    },
+  },
+};

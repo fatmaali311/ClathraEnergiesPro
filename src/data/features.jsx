@@ -24,7 +24,7 @@ export const features = [
   {
     icon: <img src={capital} alt="Capital Icon" className="w-20 h-20 object-contain" />,
     title: "Flexible Capital",
-    description: "Agile structure with variable capital up to €150,000."
+    description: "Agile corporate structure designed for scalable growth and investment."
   },
   {
     icon: <img src={location} alt="Location Icon" className="w-20 h-20 object-contain" />,
@@ -34,6 +34,6 @@ export const features = [
   {
     icon: <img src={mic} alt="Mic Icon" className="w-20 h-20 object-contain" />,
     title: "Multilingual by Design",
-    description: "We operate in English, French, Chinese, and Arabic."
+    description: "Bridging cultures and markets to serve Europe, Asia, and MENA markets."
   }
 ];

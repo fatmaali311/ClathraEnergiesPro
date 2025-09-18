@@ -27,7 +27,7 @@ export default function HeroSection() {
           Modular process solutions for <br /> renewable gases
         </motion.h1>
         <motion.p
-          className="mt-8 sm:mt-10 text-lg sm:text-xl font-normal leading-relaxed max-w-3xl text-white/95 text-center lg:text-left mx-auto lg:mx-0"
+          className="mt-8 sm:mt-10 text-lg sm:text-2xl font-normal leading-relaxed max-w-4xl text-white/95 text-center lg:text-left mx-auto lg:mx-0"
           variants={slideUp}
           initial="hidden"
           whileInView="show"
