@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="keywords" content="biogas plants, biomethane production, renewable gas storage, clean energy solutions, biogas upgrading France, sustainable energy engineering, ClathraEnergies" /> 
         <meta property="og:title" content="ClathraEnergies - Renewable Gas Innovations" />
         <meta property="og:description" content="Accelerating the transition to clean energy with modular biogas solutions and AI-powered engineering." />
-        <meta property="og:image" content="https://www.clathraenergies.fr/assets/images/hero-bg.jpg" /> 
+        <meta property="og:image" content="https://www.clathraenergies.fr/hero-bg.jpg" /> 
         <meta property="og:url" content="https://www.clathraenergies.fr/" />
         <link rel="canonical" href="https://www.clathraenergies.fr/" />
       </Helmet>

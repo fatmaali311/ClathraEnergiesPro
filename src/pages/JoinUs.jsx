@@ -9,7 +9,7 @@ export default function JoinUs() {
         <meta name="keywords" content="join ClathraEnergies, renewable energy careers, biogas engineering jobs, sustainable tech positions, deep-tech team France" /> {/* Keywords مخصصة */}
         <meta property="og:title" content="Join Us - ClathraEnergies" />
         <meta property="og:description" content="Be part of the future of clean energy." />
-        <meta property="og:image" content="https://www.clathraenergies.fr/assets/images/map.png" />
+        <meta property="og:image" content="https://www.clathraenergies.fr/map.png" />
         <meta property="og:url" content="https://www.clathraenergies.fr/join" />
         <link rel="canonical" href="https://www.clathraenergies.fr/join" />
       </Helmet>

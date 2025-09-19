@@ -11,7 +11,7 @@ export default function Services() {
         <meta name="keywords" content="biogas engineering services, biomethane plant design, gas storage technology, renewable gas solutions, hydrate storage innovation, ClathraEnergies services" /> {/* Keywords مخصصة */}
         <meta property="og:title" content="Services at ClathraEnergies" />
         <meta property="og:description" content="From feasibility studies to breakthrough technologies for renewable gases." />
-        <meta property="og:image" content="https://www.clathraenergies.fr/assets/images/services.png" />
+        <meta property="og:image" content="https://www.clathraenergies.fr/services.png" />
         <meta property="og:url" content="https://www.clathraenergies.fr/services" />
         <link rel="canonical" href="https://www.clathraenergies.fr/services" />
       </Helmet>

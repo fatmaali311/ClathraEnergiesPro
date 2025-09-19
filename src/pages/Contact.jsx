@@ -9,7 +9,7 @@ export default function Contact() {
         <meta name="keywords" content="contact ClathraEnergies, biogas consultation France, renewable energy inquiry, gas storage partnership, clean energy contact" /> {/* Keywords مخصصة */}
         <meta property="og:title" content="Contact Us - ClathraEnergies" />
         <meta property="og:description" content="Reach out for free consultations on renewable gas projects." />
-        <meta property="og:image" content="https://www.clathraenergies.fr/assets/images/lab-bg.jpg" />
+        <meta property="og:image" content="https://www.clathraenergies.fr/lab-bg.jpg" />
         <meta property="og:url" content="https://www.clathraenergies.fr/contact" />
         <link rel="canonical" href="https://www.clathraenergies.fr/contact" />
       </Helmet>

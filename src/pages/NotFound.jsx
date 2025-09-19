@@ -28,7 +28,7 @@ export default function NotFound() {
         />
         <meta
           property="og:image"
-          content="https://www.clathraenergies.fr/assets/images/logo.png"
+          content="https://www.clathraenergies.fr/logo.png"
         />
         <meta property="og:url" content="https://www.clathraenergies.fr/404" />
         <link rel="canonical" href="https://www.clathraenergies.fr/404" />
@@ -141,35 +141,37 @@ export default function NotFound() {
             </motion.button>
           </motion.div>
           {/* Contact Info Section */}
-          <motion.div
-            className="mt-8 mx-auto w-full max-w-2xl bg-white rounded-lg p-4 sm:p-6 shadow-sm text-sm sm:text-base text-gray-700"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1 }}
-          >
-            <p className="font-medium text-gray-800">Need help?</p>
-            <p className="text-gray-600 mt-1 text-sm">
-              Something went wrong. Reach out to us:
+         <motion.div
+          className="mt-8 mx-auto w-full max-w-2xl bg-white rounded-lg p-4 sm:p-6 shadow-sm text-sm sm:text-base text-gray-700"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+        >
+          <p className="font-medium text-gray-800">Need help?</p>
+          <p className="text-gray-600 mt-1 text-sm">
+            Something went wrong. Reach out to us:
+          </p>
+          <div className="mt-3 space-y-2">
+            <p>
+              <span className="font-medium">Email: </span>
+              <a
+                href="mailto:clathraenergies@gmail.com"
+                className="text-[var(--primary-green)] hover:underline break-all"
+              >
+                clathraenergies@gmail.com
+              </a>
             </p>
-
-            <div className="mt-3 space-y-3">
-              {contactInfo.map((item, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <span className="text-[var(--primary-green)]">{item.icon}</span>
-                  {item.link ? (
-                    <a
-                      href={item.link}
-                      className="hover:underline text-[var(--primary-green)] break-all"
-                    >
-                      {item.text}
-                    </a>
-                  ) : (
-                    <span>{item.text}</span>
-                  )}
-                </div>
-              ))}
-            </div>
-          </motion.div>
+            <p>
+              <span className="font-medium">Phone: </span>
+              <a
+                href="tel:+33(0)766699019"
+                className="text-[var(--primary-green)] hover:underline"
+              >
+                +33(0)766699019
+              </a>
+            </p>
+          </div>
+        </motion.div>
           {/* Footer */}
           <motion.div
             className="mt-6 text-xs text-gray-500"

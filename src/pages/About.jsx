@@ -13,7 +13,7 @@ export default function About() {
         <meta name="keywords" content="ClathraEnergies about, renewable energy mission, biogas vision, sustainable gas storage, energy transition company, deep-tech engineering France" /> 
         <meta property="og:title" content="About ClathraEnergies" />
         <meta property="og:description" content="Bridging scientific research and practical energy solutions for a sustainable future." />
-        <meta property="og:image" content="https://www.clathraenergies.fr/assets/images/about-bg.jpg" />
+        <meta property="og:image" content="https://www.clathraenergies.fr/about-bg.jpg" />
         <meta property="og:url" content="https://www.clathraenergies.fr/about" />
         <link rel="canonical" href="https://www.clathraenergies.fr/about" />
       </Helmet>
