@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { FaHome, FaArrowLeft, FaExclamationTriangle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { contactInfo } from "../data/contactInfo";
-import { Helmet } from 'react-helmet';
+
 
 export default function NotFound() {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ export default function NotFound() {
 
   return (
     <>
-      <Helmet>
+   
         <title>404 - Page Not Found | ClathraEnergies</title>
         <meta
           name="description"
@@ -32,7 +32,7 @@ export default function NotFound() {
         />
         <meta property="og:url" content="https://www.clathraenergies.fr/404" />
         <link rel="canonical" href="https://www.clathraenergies.fr/404" />
-      </Helmet>
+     
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center px-4">
         <motion.div
           className="w-full max-w-md text-center"
